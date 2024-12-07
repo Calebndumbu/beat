@@ -54,3 +54,38 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
+/* Responsive Table for Small Screens */
+@media screen and (max-width: 768px) {
+  table {
+    border: 0;
+  }
+  
+  /* Make table rows stack vertically */
+  thead {
+    display: none; /* Hide the table header on smaller screens */
+  }
+  
+  tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    display: block;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  td::before {
+    content: attr(data-label); /* Use the data-label attribute to display the header */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
