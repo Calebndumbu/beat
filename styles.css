@@ -15,6 +15,9 @@ th {
   text-align: left;
   border: 1px solid #ddd;
   padding: 10px;
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Sticks the header to the top */
+  z-index: 1; /* Ensures the header stays above other content */
 }
 
 /* Cell Styling */
