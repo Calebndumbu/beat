@@ -1,50 +1,49 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-family: Arial, sans-serif;
-      }
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
 
-      th,
-      td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: left;
-      }
+th {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1em;
+}
 
-      th {
-        background-color: #4caf50;
-        color: white;
-        font-size: 1.1em;
-      }
+td {
+  background-color: #f9f9f9;
+}
 
-      td {
-        background-color: #f9f9f9;
-      }
+/* Hover effect for rows */
+tr:hover {
+  background-color: #f1f1f1;
+}
 
-      /* Hover effect for rows */
-      tr:hover {
-        background-color: #f1f1f1;
-      }
+/* Bold text for Phase headers */
+td strong {
+  font-size: 1.2em;
+  color: #333;
+}
 
-      /* Bold text for Phase headers */
-      td strong {
-        font-size: 1.2em;
-        color: #333;
-      }
+/* Alternate row colors */
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
 
-      /* Alternate row colors */
-      tr:nth-child(even) td {
-        background-color: #f2f2f2;
-      }
+tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
 
-      tr:nth-child(odd) td {
-        background-color: #ffffff;
-      }
-
-      /* Add some padding and spacing around the table */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
+/* Add some padding and spacing around the table */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
